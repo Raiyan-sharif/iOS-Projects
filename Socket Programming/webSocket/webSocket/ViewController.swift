@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  webSocket
 //
-//  Created by Synesis Sqa on 29/4/25.
+//  https://piehost.com/websocket-tester
 //
 
 import UIKit
