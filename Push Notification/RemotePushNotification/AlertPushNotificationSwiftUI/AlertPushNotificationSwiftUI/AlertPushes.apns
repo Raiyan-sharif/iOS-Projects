@@ -1,0 +1,13 @@
+{
+    "Simulator Target Bundle": "raiyansharif.AlertPushNotificationSwiftUI",
+    "aps" : {
+        "alert" : {
+            "title" : "All Hands",
+            "body" : "Raiyan has Joinned the meeting"
+        },
+        "sound": "default",
+        "badge": 5,
+    },
+    "duration": "Current time",
+    "startedAt": "Meeting's starting time"
+}
