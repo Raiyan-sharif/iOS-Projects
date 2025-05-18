@@ -12,6 +12,7 @@ import SwiftUI
 struct NotificationListView: View {
     @EnvironmentObject var lnManager: LocalNotificationManager
     @Environment(\.scenePhase) var scenePhase
+    @State private var scheduleDate: Date = Date()
     
     var body: some View {
         NavigationView {
@@ -20,14 +21,23 @@ struct NotificationListView: View {
                     GroupBox("Schedule") {
                         Button("Interval Notification") {
                             Task {
-                                let localNotification = LocalNotification(identifier: UUID().uuidString, title: "Some Title", body: "Some Body", timeInterval: 60, repeats: true)
+                                let localNotification = LocalNotification(identifier: UUID().uuidString, title: "Some Title", body: "Some Body", timeInterval: 60, repeats: false)
                                 await lnManager.schedule(localNotification: localNotification)
                             }
                         }
                         .buttonStyle(.bordered)
-                        Button("Calendar Notification") {
+                        GroupBox{
+                            DatePicker("", selection: $scheduleDate)
+                            Button("Calendar Notification") {
+                                Task{
+                                    let dateComponent = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: scheduleDate)
+                                    let localNotification = LocalNotification(identifier: UUID().uuidString, title: "Calendar Title", body: "Calendar Body", dateComponents: dateComponent, repeats: false)
+                                    await lnManager.schedule(localNotification: localNotification)
+                                }
+                            }
+                            .buttonStyle(.bordered)
+
                         }
-                        .buttonStyle(.bordered)
                     }
                     .frame(width: 300)
                     // List View Here

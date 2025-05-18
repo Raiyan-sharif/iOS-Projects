@@ -55,10 +55,16 @@ class LocalNotificationManager: NSObject, ObservableObject, UNUserNotificationCe
         content.title = localNotification.title
         content.body = localNotification.body
         content.sound = UNNotificationSound.default
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: localNotification.timeInterval, repeats: localNotification.repeats)
+        var trigger: UNNotificationTrigger
+        if localNotification.scheduleType == .time{
+            guard let timeInterval = localNotification.timeInterval else { return }
+            trigger = UNTimeIntervalNotificationTrigger(timeInterval: timeInterval, repeats: localNotification.repeats)
+            
+        } else {
+            guard let dateComponents = localNotification.dateComponents else { return }
+            trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: localNotification.repeats)
+        }
         let request = UNNotificationRequest(identifier: localNotification.identifier, content: content, trigger: trigger)
-        
         try? await notificationCenter.add(request)
         await getPendingRequeest()
     }
