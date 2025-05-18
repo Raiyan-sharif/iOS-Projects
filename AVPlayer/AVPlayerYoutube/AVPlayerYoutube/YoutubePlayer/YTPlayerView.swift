@@ -67,40 +67,57 @@ class YTPlayerView: UIView, WKScriptMessageHandler {
     }
 
     private func loadHTML() {
-        let htmlString = """
-        <!DOCTYPE html>
-        <html>
-        <body style="margin:0">
-        <div id="player"></div>
-        <script>
-        var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            let htmlString = """
+            <!DOCTYPE html>
+            <html>
+            <body style="margin:0">
+            <div id="player"></div>
+            <script>
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-        var player;
-        function onYouTubeIframeAPIReady() {
-            window.webkit.messageHandlers.onYouTubeIframeAPIReady.postMessage('');
-        }
+            var player;
+            function onYouTubeIframeAPIReady() {
+                window.webkit.messageHandlers.onYouTubeIframeAPIReady.postMessage('');
+            }
 
-        function onPlayerReady(event) {
-            window.webkit.messageHandlers.onReady.postMessage('');
-            event.target.playVideo();
-        }
+            function onPlayerReady(event) {
+                window.webkit.messageHandlers.onReady.postMessage('');
+                event.target.playVideo(); // Autoplay live stream
+            }
 
-        function onPlayerStateChange(event) {
-            window.webkit.messageHandlers.onStateChange.postMessage(event.data.toString());
-        }
+            function onPlayerStateChange(event) {
+                window.webkit.messageHandlers.onStateChange.postMessage(event.data.toString());
+            }
 
-        function onPlayerError(event) {
-            window.webkit.messageHandlers.onError.postMessage(event.data.toString());
+            function onPlayerError(event) {
+                window.webkit.messageHandlers.onError.postMessage(event.data.toString());
+            }
+            </script>
+            </body>
+            </html>
+            """
+            webView.loadHTMLString(htmlString, baseURL: nil)
         }
-        </script>
-        </body>
-        </html>
-        """
-        webView.loadHTMLString(htmlString, baseURL: nil)
-    }
+        
+        func load(withVideoId videoId: String, playerVars: [String: Any] = [:]) {
+            // Ensure playerVars are suitable for live streams
+            var updatedPlayerVars = playerVars
+            updatedPlayerVars["autoplay"] = 1
+            updatedPlayerVars["controls"] = 0
+            updatedPlayerVars["playsinline"] = 1
+            updatedPlayerVars["modestbranding"] = 1
+            updatedPlayerVars["rel"] = 0
+            // Remove start/end parameters if present, as they don't apply to live streams
+            updatedPlayerVars.removeValue(forKey: "start")
+            updatedPlayerVars.removeValue(forKey: "end")
+            
+            self.initialVideoId = videoId
+            self.playerVars = updatedPlayerVars
+            loadHTML()
+        }
 
     // MARK: - JavaScript Communication
 
@@ -124,12 +141,12 @@ class YTPlayerView: UIView, WKScriptMessageHandler {
     // MARK: - Player API
 
     // New load function that accepts playerVars dictionary
-    func load(withVideoId videoId: String, playerVars: [String: Any] = [:]) {
-        self.initialVideoId = videoId
-        self.playerVars = playerVars
-        loadHTML()
-    }
-    
+//    func load(withVideoId videoId: String, playerVars: [String: Any] = [:]) {
+//        self.initialVideoId = videoId
+//        self.playerVars = playerVars
+//        loadHTML()
+//    }
+//    
     private func injectPlayer(videoId: String, playerVars: [String: Any]) {
         // Convert playerVars dictionary to JSON string
         guard let playerVarsData = try? JSONSerialization.data(withJSONObject: playerVars, options: []),
