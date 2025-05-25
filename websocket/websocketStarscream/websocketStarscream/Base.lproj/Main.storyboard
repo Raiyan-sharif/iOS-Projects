@@ -26,9 +26,6 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Stop Socket">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
-                                        <connections>
-                                            <action selector="stopWebsocket:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jgs-3D-UFi"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNS-Uf-x5k">
                                         <rect key="frame" x="0.0" y="87.333333333333314" width="136.33333333333334" height="40.333333333333343"/>
@@ -38,7 +35,7 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="writeMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5rK-eP-FjJ"/>
+                                            <action selector="sendMessageTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zFf-u3-fsx"/>
                                         </connections>
                                     </button>
                                 </subviews>

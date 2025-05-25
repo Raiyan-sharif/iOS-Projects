@@ -7,126 +7,168 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		129AD7152DDF63AE00E37F47 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 129AD7142DDF63AE00E37F47 /* Starscream */; };
-		129AD7472DE1C83300E37F47 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 129AD7462DE1C83300E37F47 /* Starscream */; };
+		12D0796A2DE2F7E300EA9B1B /* Pods_websocketSwiftStompClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9A0BA45E4AE4F99D799AE1 /* Pods_websocketSwiftStompClient.framework */; };
+		12D0796B2DE2F7E300EA9B1B /* Pods_websocketSwiftStompClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD9A0BA45E4AE4F99D799AE1 /* Pods_websocketSwiftStompClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		12D0796C2DE2F7E300EA9B1B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				12D0796B2DE2F7E300EA9B1B /* Pods_websocketSwiftStompClient.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		129AD6C12DDF57F600E37F47 /* websocketStarscream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = websocketStarscream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		129AD7632DE2DCD600E37F47 /* websocketSwiftStompClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = websocketSwiftStompClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D0796D2DE2F7ED00EA9B1B /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D079702DE2F7F900EA9B1B /* StompClientLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StompClientLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D0798B2DE2FA9000EA9B1B /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		292352E28349DCA9B5CE7D9A /* Pods-websocketSwiftStompClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-websocketSwiftStompClient.debug.xcconfig"; path = "Target Support Files/Pods-websocketSwiftStompClient/Pods-websocketSwiftStompClient.debug.xcconfig"; sourceTree = "<group>"; };
+		C40E3B862D99E7D7417589A2 /* Pods-websocketSwiftStompClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-websocketSwiftStompClient.release.xcconfig"; path = "Target Support Files/Pods-websocketSwiftStompClient/Pods-websocketSwiftStompClient.release.xcconfig"; sourceTree = "<group>"; };
+		CD9A0BA45E4AE4F99D799AE1 /* Pods_websocketSwiftStompClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_websocketSwiftStompClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		129AD6D32DDF57F800E37F47 /* Exceptions for "websocketStarscream" folder in "websocketStarscream" target */ = {
+		129AD7752DE2DCD900E37F47 /* Exceptions for "websocketSwiftStompClient" folder in "websocketSwiftStompClient" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 129AD6C02DDF57F600E37F47 /* websocketStarscream */;
+			target = 129AD7622DE2DCD600E37F47 /* websocketSwiftStompClient */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		129AD6C32DDF57F600E37F47 /* websocketStarscream */ = {
+		129AD7652DE2DCD600E37F47 /* websocketSwiftStompClient */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				129AD6D32DDF57F800E37F47 /* Exceptions for "websocketStarscream" folder in "websocketStarscream" target */,
+				129AD7752DE2DCD900E37F47 /* Exceptions for "websocketSwiftStompClient" folder in "websocketSwiftStompClient" target */,
 			);
-			path = websocketStarscream;
+			path = websocketSwiftStompClient;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		129AD6BE2DDF57F600E37F47 /* Frameworks */ = {
+		129AD7602DE2DCD600E37F47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				129AD7152DDF63AE00E37F47 /* Starscream in Frameworks */,
-				129AD7472DE1C83300E37F47 /* Starscream in Frameworks */,
+				12D0796A2DE2F7E300EA9B1B /* Pods_websocketSwiftStompClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		129AD6B82DDF57F600E37F47 = {
+		129AD75A2DE2DCD600E37F47 = {
 			isa = PBXGroup;
 			children = (
-				129AD6C32DDF57F600E37F47 /* websocketStarscream */,
-				129AD6C22DDF57F600E37F47 /* Products */,
+				129AD7652DE2DCD600E37F47 /* websocketSwiftStompClient */,
+				129AD7642DE2DCD600E37F47 /* Products */,
+				F4372B6CC2CED8D39EEF84D2 /* Pods */,
+				F535E4DB8D88CEA97FB4C40E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		129AD6C22DDF57F600E37F47 /* Products */ = {
+		129AD7642DE2DCD600E37F47 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				129AD6C12DDF57F600E37F47 /* websocketStarscream.app */,
+				129AD7632DE2DCD600E37F47 /* websocketSwiftStompClient.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F4372B6CC2CED8D39EEF84D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				292352E28349DCA9B5CE7D9A /* Pods-websocketSwiftStompClient.debug.xcconfig */,
+				C40E3B862D99E7D7417589A2 /* Pods-websocketSwiftStompClient.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F535E4DB8D88CEA97FB4C40E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12D0798B2DE2FA9000EA9B1B /* SocketRocket.framework */,
+				12D079702DE2F7F900EA9B1B /* StompClientLib.framework */,
+				12D0796D2DE2F7ED00EA9B1B /* SocketRocket.framework */,
+				CD9A0BA45E4AE4F99D799AE1 /* Pods_websocketSwiftStompClient.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		129AD6C02DDF57F600E37F47 /* websocketStarscream */ = {
+		129AD7622DE2DCD600E37F47 /* websocketSwiftStompClient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 129AD6D42DDF57F800E37F47 /* Build configuration list for PBXNativeTarget "websocketStarscream" */;
+			buildConfigurationList = 129AD7762DE2DCD900E37F47 /* Build configuration list for PBXNativeTarget "websocketSwiftStompClient" */;
 			buildPhases = (
-				129AD6BD2DDF57F600E37F47 /* Sources */,
-				129AD6BE2DDF57F600E37F47 /* Frameworks */,
-				129AD6BF2DDF57F600E37F47 /* Resources */,
+				6B61503AE712563D702D3F40 /* [CP] Check Pods Manifest.lock */,
+				129AD75F2DE2DCD600E37F47 /* Sources */,
+				129AD7602DE2DCD600E37F47 /* Frameworks */,
+				129AD7612DE2DCD600E37F47 /* Resources */,
+				223D8C94D3DFE64AD5968E8C /* [CP] Embed Pods Frameworks */,
+				12D0796C2DE2F7E300EA9B1B /* Embed Frameworks */,
+				12D0798E2DE2FAC400EA9B1B /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				129AD6C32DDF57F600E37F47 /* websocketStarscream */,
+				129AD7652DE2DCD600E37F47 /* websocketSwiftStompClient */,
 			);
-			name = websocketStarscream;
-			productName = websocketStarscream;
-			productReference = 129AD6C12DDF57F600E37F47 /* websocketStarscream.app */;
+			name = websocketSwiftStompClient;
+			productName = websocketSwiftStompClient;
+			productReference = 129AD7632DE2DCD600E37F47 /* websocketSwiftStompClient.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		129AD6B92DDF57F600E37F47 /* Project object */ = {
+		129AD75B2DE2DCD600E37F47 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					129AD6C02DDF57F600E37F47 = {
+					129AD7622DE2DCD600E37F47 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = 129AD6BC2DDF57F600E37F47 /* Build configuration list for PBXProject "websocketStarscream" */;
+			buildConfigurationList = 129AD75E2DE2DCD600E37F47 /* Build configuration list for PBXProject "websocketSwiftStompClient" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 129AD6B82DDF57F600E37F47;
+			mainGroup = 129AD75A2DE2DCD600E37F47;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				129AD7132DDF63AE00E37F47 /* XCRemoteSwiftPackageReference "Starscream" */,
-			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 129AD6C22DDF57F600E37F47 /* Products */;
+			productRefGroup = 129AD7642DE2DCD600E37F47 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				129AD6C02DDF57F600E37F47 /* websocketStarscream */,
+				129AD7622DE2DCD600E37F47 /* websocketSwiftStompClient */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		129AD6BF2DDF57F600E37F47 /* Resources */ = {
+		129AD7612DE2DCD600E37F47 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,8 +177,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12D0798E2DE2FAC400EA9B1B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		223D8C94D3DFE64AD5968E8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-websocketSwiftStompClient/Pods-websocketSwiftStompClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-websocketSwiftStompClient/Pods-websocketSwiftStompClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-websocketSwiftStompClient/Pods-websocketSwiftStompClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B61503AE712563D702D3F40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-websocketSwiftStompClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		129AD6BD2DDF57F600E37F47 /* Sources */ = {
+		129AD75F2DE2DCD600E37F47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -146,16 +248,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		129AD6D52DDF57F800E37F47 /* Debug */ = {
+		129AD7772DE2DCD900E37F47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292352E28349DCA9B5CE7D9A /* Pods-websocketSwiftStompClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				ENABLE_APP_SANDBOX = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = websocketStarscream/Info.plist;
+				INFOPLIST_FILE = websocketSwiftStompClient/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -166,7 +270,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = raiyansharif.websocketStarscream;
+				PRODUCT_BUNDLE_IDENTIFIER = raiyansharif.websocketSwiftStompClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -174,16 +278,18 @@
 			};
 			name = Debug;
 		};
-		129AD6D62DDF57F800E37F47 /* Release */ = {
+		129AD7782DE2DCD900E37F47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C40E3B862D99E7D7417589A2 /* Pods-websocketSwiftStompClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				ENABLE_APP_SANDBOX = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = websocketStarscream/Info.plist;
+				INFOPLIST_FILE = websocketSwiftStompClient/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -194,7 +300,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = raiyansharif.websocketStarscream;
+				PRODUCT_BUNDLE_IDENTIFIER = raiyansharif.websocketSwiftStompCli;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -202,7 +308,7 @@
 			};
 			name = Release;
 		};
-		129AD6D72DDF57F800E37F47 /* Debug */ = {
+		129AD7792DE2DCD900E37F47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -265,7 +371,7 @@
 			};
 			name = Debug;
 		};
-		129AD6D82DDF57F800E37F47 /* Release */ = {
+		129AD77A2DE2DCD900E37F47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -324,49 +430,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		129AD6BC2DDF57F600E37F47 /* Build configuration list for PBXProject "websocketStarscream" */ = {
+		129AD75E2DE2DCD600E37F47 /* Build configuration list for PBXProject "websocketSwiftStompClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				129AD6D72DDF57F800E37F47 /* Debug */,
-				129AD6D82DDF57F800E37F47 /* Release */,
+				129AD7792DE2DCD900E37F47 /* Debug */,
+				129AD77A2DE2DCD900E37F47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		129AD6D42DDF57F800E37F47 /* Build configuration list for PBXNativeTarget "websocketStarscream" */ = {
+		129AD7762DE2DCD900E37F47 /* Build configuration list for PBXNativeTarget "websocketSwiftStompClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				129AD6D52DDF57F800E37F47 /* Debug */,
-				129AD6D62DDF57F800E37F47 /* Release */,
+				129AD7772DE2DCD900E37F47 /* Debug */,
+				129AD7782DE2DCD900E37F47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		129AD7132DDF63AE00E37F47 /* XCRemoteSwiftPackageReference "Starscream" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/daltoniam/Starscream";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.8;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		129AD7142DDF63AE00E37F47 /* Starscream */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 129AD7132DDF63AE00E37F47 /* XCRemoteSwiftPackageReference "Starscream" */;
-			productName = Starscream;
-		};
-		129AD7462DE1C83300E37F47 /* Starscream */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 129AD7132DDF63AE00E37F47 /* XCRemoteSwiftPackageReference "Starscream" */;
-			productName = Starscream;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 129AD6B92DDF57F600E37F47 /* Project object */;
+	rootObject = 129AD75B2DE2DCD600E37F47 /* Project object */;
 }
