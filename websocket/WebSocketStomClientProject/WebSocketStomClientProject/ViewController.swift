@@ -1,7 +1,6 @@
 //
 //  ViewController.swift
-//  WebSocketStomClientProject
-//
+//  WebSocketStompClientProject
 //
 
 import Foundation
@@ -28,30 +27,17 @@ struct WebSocketMessage: Codable {
 
 // MARK: - WebSocketService
 class WebSocketService: StompClientLibDelegate {
-    func stompClient(client: StompClientLib!, didReceiveMessageWithJSONBody jsonBody: AnyObject?, akaStringBody stringBody: String?, withHeader header: [String : String]?, withDestination destination: String) {
-        print("\(jsonBody)")
-    }
-    
-    func serverDidSendReceipt(client: StompClientLib!, withReceiptId receiptId: String) {
-        print("\(receiptId)")
-    }
-    
-    func serverDidSendPing() {
-        print("Pingged")
-    }
-    
-
-    
-    
     static let shared = WebSocketService()
-    private var socketClient: StompClientLib?
+    
+    private var socketClient = StompClientLib()
     private var config: WebSocketConfig?
     private var subscriptions: [String: (WebSocketMessage) -> Void] = [:]
     private let prefix = "CONVAY_WIDGET"
+    
+    private init() {}
 
     func configure(with config: WebSocketConfig) {
         self.config = config
-        socketClient = StompClientLib()
         connect()
     }
 
@@ -60,14 +46,12 @@ class WebSocketService: StompClientLibDelegate {
             log("Error: WebSocketConfig not set")
             return
         }
-        socketClient?.openSocketWithURLRequest(
-            request: URLRequest(url: config.url) as NSURLRequest,
-            delegate: self
-        )
+        let request = NSURLRequest(url: config.url)
+        socketClient.openSocketWithURLRequest(request: request, delegate: self)
     }
 
     func disconnect() {
-        socketClient?.disconnect()
+        socketClient.disconnect()
         subscriptions.removeAll()
         log("Disconnected from server")
     }
@@ -75,16 +59,57 @@ class WebSocketService: StompClientLibDelegate {
     func subscribeToRoom(roomId: String, callback: @escaping (WebSocketMessage) -> Void) {
         let destination = "/topic/room.\(roomId)"
         subscriptions[destination] = callback
-//        if socketClient?.socket?.isConnected ?? false {
-            socketClient?.subscribe(destination: destination)
+        
+        if socketClient.isConnected() {
+            socketClient.subscribe(destination: destination)
             log("Subscribed to \(destination)")
-//        } else {
-            log("Connection not ready, subscription to \(destination) will be applied on connect")
-//        }
+        } else {
+            log("Connection not ready, will subscribe to \(destination) on reconnect")
+        }
     }
 
-    func stompClient(client: StompClientLib, didReceiveMessageWithJSONBody jsonBody: Any?, aka: String?, withHeader header: [String: String]?, withDestination destination: String) {
-        guard let json = jsonBody as? [String: Any], let callback = subscriptions[destination] else {
+    func sendCallNotification(_ message: WebSocketMessage) {
+        let destination = "/app/notification.send"
+        guard let jsonData = try? JSONEncoder().encode(message),
+              let jsonString = String(data: jsonData, encoding: .utf8) else {
+            log("Failed to encode message")
+            return
+        }
+
+        if socketClient.isConnected() {
+            socketClient.sendMessage(message: jsonString, toDestination: destination, withHeaders: nil, withReceipt: nil)
+            log("Sent notification to \(destination): \(jsonString)")
+        } else {
+            log("Connection not ready, cannot send notification")
+        }
+    }
+
+    private func log(_ message: String) {
+        if config?.debug ?? false {
+            print("\(prefix) \(message)")
+        }
+    }
+
+    // MARK: - StompClientLibDelegate Methods
+
+    func stompClientDidConnect(client: StompClientLib!) {
+        log("Connected to server")
+        // Resubscribe to existing destinations
+        for destination in subscriptions.keys {
+            client.subscribe(destination: destination)
+            log("Re-subscribed to \(destination)")
+        }
+    }
+
+    func stompClientDidDisconnect(client: StompClientLib!) {
+        log("Disconnected from server")
+        attemptReconnect()
+    }
+
+    func stompClient(client: StompClientLib!, didReceiveMessageWithJSONBody jsonBody: AnyObject?,
+                     akaStringBody stringBody: String?, withHeader header: [String: String]?, withDestination destination: String) {
+        guard let json = jsonBody as? [String: Any],
+              let callback = subscriptions[destination] else {
             log("No callback for destination \(destination) or invalid JSON")
             return
         }
@@ -98,41 +123,27 @@ class WebSocketService: StompClientLibDelegate {
         }
     }
 
-    func stompClientDidConnect(client: StompClientLib) {
-        log("Connected to server")
-        subscriptions.forEach { destination, _ in
-            client.subscribe(destination: destination)
-            log("Re-subscribing to \(destination)")
-        }
+    func serverDidSendReceipt(client: StompClientLib!, withReceiptId receiptId: String) {
+        log("Received receipt: \(receiptId)")
     }
 
-    func stompClientDidDisconnect(client: StompClientLib) {
-        log("Disconnected from server")
-        handleError(NSError(domain: "STOMP", code: -1, userInfo: nil))
+    func serverDidSendPing() {
+        log("Received ping")
     }
 
-    func serverDidSendError(client: StompClientLib, withErrorMessage description: String, detailedErrorMessage message: String?) {
-        log("STOMP Error: \(description)")
-        handleError(NSError(domain: "STOMP", code: -1, userInfo: ["message": description]))
+    func serverDidSendError(client: StompClientLib!, withErrorMessage description: String, detailedErrorMessage message: String?) {
+        log("STOMP Error: \(description), Details: \(message ?? "")")
+        attemptReconnect()
     }
 
-    private func handleError(_ error: Error) {
-        log("Error: \(error)")
-        guard let config = config else { return }
-        DispatchQueue.main.asyncAfter(deadline: .now() + config.reconnectDelay) {
-            self.log("Attempting to reconnect...")
-            self.connect()
-        }
-    }
-
-    private func log(_ message: String) {
-        if config?.debug ?? false {
-            print("\(prefix) \(message)")
+    private func attemptReconnect() {
+        guard let delay = config?.reconnectDelay else { return }
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
+            self?.log("Attempting to reconnect...")
+            self?.connect()
         }
     }
 }
-
-
 
 // MARK: - Sample View Controller
 class ViewController: UIViewController {
@@ -165,7 +176,6 @@ class ViewController: UIViewController {
         )
 
         WebSocketService.shared.configure(with: config)
-        WebSocketService.shared.connect()
 
         WebSocketService.shared.subscribeToRoom(roomId: "giIHoqCnTIYhiSfcjj") { [weak self] message in
             DispatchQueue.main.async {
@@ -179,4 +189,3 @@ class ViewController: UIViewController {
         WebSocketService.shared.disconnect()
     }
 }
-
