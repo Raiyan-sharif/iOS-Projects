@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92DAB7602E2515D300998F5C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DAB75F2E2515D300998F5C /* UserNotifications.framework */; };
+		92DAB7622E2515D300998F5C /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DAB7612E2515D300998F5C /* UserNotificationsUI.framework */; };
+		92DAB76C2E2515D300998F5C /* groupcall.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 92DAB75D2E2515D300998F5C /* groupcall.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		92DAB77B2E254E0C00998F5C /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 92DAB77A2E254E0C00998F5C /* FirebaseCore */; };
+		92DAB77D2E254E0C00998F5C /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 92DAB77C2E254E0C00998F5C /* FirebaseMessaging */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92DAB76A2E2515D300998F5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92DAB7372E250EDF00998F5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92DAB75C2E2515D300998F5C;
+			remoteInfo = groupcall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92DAB7712E2515D300998F5C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				92DAB76C2E2515D300998F5C /* groupcall.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		92DAB73F2E250EDF00998F5C /* CustomUIPushNotificationGroupCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomUIPushNotificationGroupCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92DAB75D2E2515D300998F5C /* groupcall.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = groupcall.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		92DAB75F2E2515D300998F5C /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		92DAB7612E2515D300998F5C /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		92DAB7512E250EE000998F5C /* Exceptions for "CustomUIPushNotificationGroupCall" folder in "CustomUIPushNotificationGroupCall" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 92DAB73E2E250EDF00998F5C /* CustomUIPushNotificationGroupCall */;
+		};
+		92DAB7702E2515D300998F5C /* Exceptions for "groupcall" folder in "groupcall" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 92DAB75C2E2515D300998F5C /* groupcall */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		92DAB7412E250EDF00998F5C /* CustomUIPushNotificationGroupCall */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				92DAB7512E250EE000998F5C /* Exceptions for "CustomUIPushNotificationGroupCall" folder in "CustomUIPushNotificationGroupCall" target */,
+			);
+			path = CustomUIPushNotificationGroupCall;
+			sourceTree = "<group>";
+		};
+		92DAB7632E2515D300998F5C /* groupcall */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				92DAB7702E2515D300998F5C /* Exceptions for "groupcall" folder in "groupcall" target */,
+			);
+			path = groupcall;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92DAB73C2E250EDF00998F5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92DAB77D2E254E0C00998F5C /* FirebaseMessaging in Frameworks */,
+				92DAB77B2E254E0C00998F5C /* FirebaseCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92DAB75A2E2515D300998F5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92DAB7622E2515D300998F5C /* UserNotificationsUI.framework in Frameworks */,
+				92DAB7602E2515D300998F5C /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92DAB7362E250EDF00998F5C = {
+			isa = PBXGroup;
+			children = (
+				92DAB7412E250EDF00998F5C /* CustomUIPushNotificationGroupCall */,
+				92DAB7632E2515D300998F5C /* groupcall */,
+				92DAB75E2E2515D300998F5C /* Frameworks */,
+				92DAB7402E250EDF00998F5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92DAB7402E250EDF00998F5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92DAB73F2E250EDF00998F5C /* CustomUIPushNotificationGroupCall.app */,
+				92DAB75D2E2515D300998F5C /* groupcall.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92DAB75E2E2515D300998F5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92DAB75F2E2515D300998F5C /* UserNotifications.framework */,
+				92DAB7612E2515D300998F5C /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92DAB73E2E250EDF00998F5C /* CustomUIPushNotificationGroupCall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92DAB7522E250EE000998F5C /* Build configuration list for PBXNativeTarget "CustomUIPushNotificationGroupCall" */;
+			buildPhases = (
+				92DAB73B2E250EDF00998F5C /* Sources */,
+				92DAB73C2E250EDF00998F5C /* Frameworks */,
+				92DAB73D2E250EDF00998F5C /* Resources */,
+				92DAB7712E2515D300998F5C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92DAB76B2E2515D300998F5C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				92DAB7412E250EDF00998F5C /* CustomUIPushNotificationGroupCall */,
+			);
+			name = CustomUIPushNotificationGroupCall;
+			packageProductDependencies = (
+				92DAB77A2E254E0C00998F5C /* FirebaseCore */,
+				92DAB77C2E254E0C00998F5C /* FirebaseMessaging */,
+			);
+			productName = CustomUIPushNotificationGroupCall;
+			productReference = 92DAB73F2E250EDF00998F5C /* CustomUIPushNotificationGroupCall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92DAB75C2E2515D300998F5C /* groupcall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92DAB76D2E2515D300998F5C /* Build configuration list for PBXNativeTarget "groupcall" */;
+			buildPhases = (
+				92DAB7592E2515D300998F5C /* Sources */,
+				92DAB75A2E2515D300998F5C /* Frameworks */,
+				92DAB75B2E2515D300998F5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				92DAB7632E2515D300998F5C /* groupcall */,
+			);
+			name = groupcall;
+			packageProductDependencies = (
+			);
+			productName = groupcall;
+			productReference = 92DAB75D2E2515D300998F5C /* groupcall.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92DAB7372E250EDF00998F5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					92DAB73E2E250EDF00998F5C = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					92DAB75C2E2515D300998F5C = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 92DAB73A2E250EDF00998F5C /* Build configuration list for PBXProject "CustomUIPushNotificationGroupCall" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92DAB7362E250EDF00998F5C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				92DAB7792E254E0C00998F5C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 92DAB7402E250EDF00998F5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92DAB73E2E250EDF00998F5C /* CustomUIPushNotificationGroupCall */,
+				92DAB75C2E2515D300998F5C /* groupcall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92DAB73D2E250EDF00998F5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92DAB75B2E2515D300998F5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92DAB73B2E250EDF00998F5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92DAB7592E2515D300998F5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92DAB76B2E2515D300998F5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92DAB75C2E2515D300998F5C /* groupcall */;
+			targetProxy = 92DAB76A2E2515D300998F5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		92DAB7532E250EE000998F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CustomUIPushNotificationGroupCall/CustomUIPushNotificationGroupCall.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomUIPushNotificationGroupCall/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synesisit.convay.chat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92DAB7542E250EE000998F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CustomUIPushNotificationGroupCall/CustomUIPushNotificationGroupCall.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomUIPushNotificationGroupCall/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synesisit.convay.chat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92DAB7552E250EE000998F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92DAB7562E250EE000998F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92DAB76E2E2515D300998F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = groupcall/groupcall.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = groupcall/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = groupcall;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synesisit.convay.chat.contentextention;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92DAB76F2E2515D300998F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = groupcall/groupcall.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = groupcall/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = groupcall;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synesisit.convay.chat.contentextention;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92DAB73A2E250EDF00998F5C /* Build configuration list for PBXProject "CustomUIPushNotificationGroupCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92DAB7552E250EE000998F5C /* Debug */,
+				92DAB7562E250EE000998F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92DAB7522E250EE000998F5C /* Build configuration list for PBXNativeTarget "CustomUIPushNotificationGroupCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92DAB7532E250EE000998F5C /* Debug */,
+				92DAB7542E250EE000998F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92DAB76D2E2515D300998F5C /* Build configuration list for PBXNativeTarget "groupcall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92DAB76E2E2515D300998F5C /* Debug */,
+				92DAB76F2E2515D300998F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		92DAB7792E254E0C00998F5C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		92DAB77A2E254E0C00998F5C /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92DAB7792E254E0C00998F5C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		92DAB77C2E254E0C00998F5C /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92DAB7792E254E0C00998F5C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 92DAB7372E250EDF00998F5C /* Project object */;
+}

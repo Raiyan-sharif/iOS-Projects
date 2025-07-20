@@ -1,0 +1,56 @@
+{
+    "Simulator Target Bundle" :"com.synesisit.convay.chat",
+    "aps": {
+        "alert": {
+          "title": "Matrix Meeting",
+          "body": "One to one call"
+        },
+        "category": "matrixMeetingCategory",
+        "mutable-content": 1,
+        "sound": "default",
+        "badge": 1
+      },
+    
+      "active_meetings": [
+        {
+          "id": "20e04384-add4-4af9-b330-46ffa87692a2",
+          "meetingUrl": null,
+          "roomId": "XshFFSsYzHbOpJPyJE",
+          "matrixServerName": "chatservertest.bcc.gov.bd",
+          "meetingStartTime": null,
+          "meetingEndTime": null,
+          "participants": null,
+          "createdAt": "2025-07-15T12:29:57",
+          "updatedAt": "2025-07-15T12:29:57",
+          "oneToOneCall": true
+        },
+        {
+          "id": "e3c2e6d0-da33-4e4b-a653-68f2dca55bbe",
+          "meetingUrl": null,
+          "roomId": "XshFFSsYzHbOpJPyJE",
+          "matrixServerName": "chatservertest.bcc.gov.bd",
+          "meetingStartTime": null,
+          "meetingEndTime": null,
+          "participants": null,
+          "createdAt": "2025-07-15T12:29:45",
+          "updatedAt": "2025-07-15T12:29:45",
+          "oneToOneCall": true
+        },
+        {
+          "id": "2f2f9e1a-5d60-457d-8d81-c74c34cae540",
+          "meetingUrl": null,
+          "roomId": "PLuOHKUiGUddltInFO",
+          "matrixServerName": "chatservertest.bcc.gov.bd",
+          "meetingStartTime": null,
+          "meetingEndTime": null,
+          "participants": null,
+          "createdAt": "2025-07-07T10:19:13",
+          "updatedAt": "2025-07-07T10:19:13",
+          "oneToOneCall": true
+        }
+      ],
+      "google.c.sender.id": "846082661063",
+      "google.c.fid": "e2gHxzRmLkvIgTKS01CFn4",
+      "gcm.message_id": "1752636230011916"
+    
+}
