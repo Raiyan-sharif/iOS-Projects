@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		92F978E52E852C0C00BD88E5 /* ReminderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReminderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F978FE2E852F4100BD88E5 /* ReminderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReminderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		92F978E72E852C0C00BD88E5 /* ReminderApp */ = {
+		92F979002E852F4100BD88E5 /* ReminderApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ReminderApp;
 			sourceTree = "<group>";
@@ -19,7 +19,7 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		92F978E22E852C0C00BD88E5 /* Frameworks */ = {
+		92F978FB2E852F4100BD88E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		92F978DC2E852C0C00BD88E5 = {
+		92F978F52E852F4100BD88E5 = {
 			isa = PBXGroup;
 			children = (
-				92F978E72E852C0C00BD88E5 /* ReminderApp */,
-				92F978E62E852C0C00BD88E5 /* Products */,
+				92F979002E852F4100BD88E5 /* ReminderApp */,
+				92F978FF2E852F4100BD88E5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		92F978E62E852C0C00BD88E5 /* Products */ = {
+		92F978FF2E852F4100BD88E5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				92F978E52E852C0C00BD88E5 /* ReminderApp.app */,
+				92F978FE2E852F4100BD88E5 /* ReminderApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		92F978E42E852C0C00BD88E5 /* ReminderApp */ = {
+		92F978FD2E852F4100BD88E5 /* ReminderApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92F978F22E852C0D00BD88E5 /* Build configuration list for PBXNativeTarget "ReminderApp" */;
+			buildConfigurationList = 92F979092E852F4200BD88E5 /* Build configuration list for PBXNativeTarget "ReminderApp" */;
 			buildPhases = (
-				92F978E12E852C0C00BD88E5 /* Sources */,
-				92F978E22E852C0C00BD88E5 /* Frameworks */,
-				92F978E32E852C0C00BD88E5 /* Resources */,
+				92F978FA2E852F4100BD88E5 /* Sources */,
+				92F978FB2E852F4100BD88E5 /* Frameworks */,
+				92F978FC2E852F4100BD88E5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				92F978E72E852C0C00BD88E5 /* ReminderApp */,
+				92F979002E852F4100BD88E5 /* ReminderApp */,
 			);
 			name = ReminderApp;
 			packageProductDependencies = (
 			);
 			productName = ReminderApp;
-			productReference = 92F978E52E852C0C00BD88E5 /* ReminderApp.app */;
+			productReference = 92F978FE2E852F4100BD88E5 /* ReminderApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		92F978DD2E852C0C00BD88E5 /* Project object */ = {
+		92F978F62E852F4100BD88E5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					92F978E42E852C0C00BD88E5 = {
+					92F978FD2E852F4100BD88E5 = {
 						CreatedOnToolsVersion = 16.4;
 					};
 				};
 			};
-			buildConfigurationList = 92F978E02E852C0C00BD88E5 /* Build configuration list for PBXProject "ReminderApp" */;
+			buildConfigurationList = 92F978F92E852F4100BD88E5 /* Build configuration list for PBXProject "ReminderApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 92F978DC2E852C0C00BD88E5;
+			mainGroup = 92F978F52E852F4100BD88E5;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 92F978E62E852C0C00BD88E5 /* Products */;
+			productRefGroup = 92F978FF2E852F4100BD88E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				92F978E42E852C0C00BD88E5 /* ReminderApp */,
+				92F978FD2E852F4100BD88E5 /* ReminderApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		92F978E32E852C0C00BD88E5 /* Resources */ = {
+		92F978FC2E852F4100BD88E5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		92F978E12E852C0C00BD88E5 /* Sources */ = {
+		92F978FA2E852F4100BD88E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		92F978F02E852C0D00BD88E5 /* Debug */ = {
+		92F979072E852F4200BD88E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -189,7 +189,7 @@
 			};
 			name = Debug;
 		};
-		92F978F12E852C0D00BD88E5 /* Release */ = {
+		92F979082E852F4200BD88E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -246,7 +246,7 @@
 			};
 			name = Release;
 		};
-		92F978F32E852C0D00BD88E5 /* Debug */ = {
+		92F9790A2E852F4200BD88E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -274,7 +274,7 @@
 			};
 			name = Debug;
 		};
-		92F978F42E852C0D00BD88E5 /* Release */ = {
+		92F9790B2E852F4200BD88E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -305,25 +305,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		92F978E02E852C0C00BD88E5 /* Build configuration list for PBXProject "ReminderApp" */ = {
+		92F978F92E852F4100BD88E5 /* Build configuration list for PBXProject "ReminderApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92F978F02E852C0D00BD88E5 /* Debug */,
-				92F978F12E852C0D00BD88E5 /* Release */,
+				92F979072E852F4200BD88E5 /* Debug */,
+				92F979082E852F4200BD88E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92F978F22E852C0D00BD88E5 /* Build configuration list for PBXNativeTarget "ReminderApp" */ = {
+		92F979092E852F4200BD88E5 /* Build configuration list for PBXNativeTarget "ReminderApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92F978F32E852C0D00BD88E5 /* Debug */,
-				92F978F42E852C0D00BD88E5 /* Release */,
+				92F9790A2E852F4200BD88E5 /* Debug */,
+				92F9790B2E852F4200BD88E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 92F978DD2E852C0C00BD88E5 /* Project object */;
+	rootObject = 92F978F62E852F4100BD88E5 /* Project object */;
 }
