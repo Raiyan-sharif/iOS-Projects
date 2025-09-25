@@ -6,8 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		92F9790F2E85392500BD88E5 /* MyListsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F9790E2E85392500BD88E5 /* MyListsScreen.swift */; };
+		92F979112E854FD800BD88E5 /* AddMyListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F979102E854FCE00BD88E5 /* AddMyListScreen.swift */; };
+		92F979162E85749E00BD88E5 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F979152E85749E00BD88E5 /* ColorPickerView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		92F978FE2E852F4100BD88E5 /* ReminderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReminderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F9790E2E85392500BD88E5 /* MyListsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsScreen.swift; sourceTree = "<group>"; };
+		92F979102E854FCE00BD88E5 /* AddMyListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMyListScreen.swift; sourceTree = "<group>"; };
+		92F979152E85749E00BD88E5 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +41,8 @@
 		92F978F52E852F4100BD88E5 = {
 			isa = PBXGroup;
 			children = (
+				92F979122E85654500BD88E5 /* Views */,
+				92F9790D2E8538AB00BD88E5 /* Screens */,
 				92F979002E852F4100BD88E5 /* ReminderApp */,
 				92F978FF2E852F4100BD88E5 /* Products */,
 			);
@@ -43,6 +54,23 @@
 				92F978FE2E852F4100BD88E5 /* ReminderApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		92F9790D2E8538AB00BD88E5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				92F979102E854FCE00BD88E5 /* AddMyListScreen.swift */,
+				92F9790E2E85392500BD88E5 /* MyListsScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		92F979122E85654500BD88E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92F979152E85749E00BD88E5 /* ColorPickerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F9790F2E85392500BD88E5 /* MyListsScreen.swift in Sources */,
+				92F979112E854FD800BD88E5 /* AddMyListScreen.swift in Sources */,
+				92F979162E85749E00BD88E5 /* ColorPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +284,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 82QSR5XW69;
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -281,7 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 82QSR5XW69;
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
