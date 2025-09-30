@@ -17,6 +17,7 @@
 		92F9790E2E85392500BD88E5 /* MyListsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsScreen.swift; sourceTree = "<group>"; };
 		92F979102E854FCE00BD88E5 /* AddMyListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMyListScreen.swift; sourceTree = "<group>"; };
 		92F979152E85749E00BD88E5 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		92F9791E2E8C196400BD88E5 /* MyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -41,6 +42,7 @@
 		92F978F52E852F4100BD88E5 = {
 			isa = PBXGroup;
 			children = (
+				92F9791D2E8C194200BD88E5 /* Models */,
 				92F979122E85654500BD88E5 /* Views */,
 				92F9790D2E8538AB00BD88E5 /* Screens */,
 				92F979002E852F4100BD88E5 /* ReminderApp */,
@@ -71,6 +73,14 @@
 				92F979152E85749E00BD88E5 /* ColorPickerView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		92F9791D2E8C194200BD88E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				92F9791E2E8C196400BD88E5 /* MyList.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

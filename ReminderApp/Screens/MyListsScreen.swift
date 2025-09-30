@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct MyListsScreen: View {
     
     let myLists = ["Reminders", "To-Do", "Shopping List" ]
+    
     @State private var isPresented: Bool = false
     
     var body: some View {

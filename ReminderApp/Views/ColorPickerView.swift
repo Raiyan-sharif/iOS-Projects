@@ -33,7 +33,7 @@ struct ColorPickerView: View {
 }
 
 #Preview {
-    NavigationStack{
+    NavigationStack{ @MainActor in
         ColorPickerView(selectColor: .constant(.yellow))
     }
 }
