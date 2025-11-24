@@ -26,3 +26,4 @@ struct AuthView: View {
     AuthView(coordinator: AuthCoordinator())
 }
 
+

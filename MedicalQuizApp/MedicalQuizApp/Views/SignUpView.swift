@@ -149,3 +149,4 @@ struct SignUpView: View {
     SignUpView(coordinator: AuthCoordinator())
 }
 
+

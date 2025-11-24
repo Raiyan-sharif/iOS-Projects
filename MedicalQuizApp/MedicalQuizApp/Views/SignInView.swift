@@ -138,3 +138,4 @@ struct CustomTextFieldStyle: TextFieldStyle {
     SignInView(coordinator: AuthCoordinator())
 }
 
+

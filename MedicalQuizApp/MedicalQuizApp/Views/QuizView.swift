@@ -280,3 +280,4 @@ struct QuizResultView: View {
     QuizView(quiz: quiz, coordinator: AppCoordinator())
 }
 
+
