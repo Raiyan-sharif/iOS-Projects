@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+    <key>NSCalendarsUsageDescription</key>
+    <string>See your scheduled meetings in the app.</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Participate in meetings with video.</string>
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Local network is used for establishing Peer-to-Peer connections.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app needs access to location to provide location-based services and device management.</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>This app needs access to location to provide location-based services and device management.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Participate in meetings with voice and share audio during screen recording.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>We need to update your profile with images from your storage or camera and send attachment to your message room from storage</string>
+    <key>UIFileSharingEnabled</key>
+    <false/>
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>audio</string>
+        <string>fetch</string>
+        <string>voip</string>
+    </array>
+</dict>
+</plist>

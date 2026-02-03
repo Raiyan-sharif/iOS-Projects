@@ -1,0 +1,20 @@
+platform :ios, '15.1'
+
+workspace 'TestProjectForSDK.xcworkspace'
+
+target 'TestProjectForSDK' do
+  project 'TestProjectForSDK.xcodeproj'
+  pod 'JitsiMeetSDK'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      # Explicitly disable Bitcode for 2026 Xcode versions
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+      
+      # Ensure the deployment target is consistent
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.1'
+    end
+  end
+end

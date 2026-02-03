@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		926F257E2F27AC940072327A /* GiphyUISDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D751D12F14E7FB008C5BCA /* GiphyUISDK.xcframework */; };
+		926F257F2F27AC940072327A /* GiphyUISDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92D751D12F14E7FB008C5BCA /* GiphyUISDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		926F25802F27AC940072327A /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D751D52F14E819008C5BCA /* WebRTC.xcframework */; };
+		926F25812F27AC940072327A /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92D751D52F14E819008C5BCA /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		926F25852F2899700072327A /* ConvayMeetSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 926F25842F2899700072327A /* ConvayMeetSDK */; };
+		926F25AB2F2A1FD20072327A /* ConvayMeetSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 926F25AA2F2A1FD20072327A /* ConvayMeetSDK */; };
+		92DF14242F1F9558009B572B /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DF14232F1F9557009B572B /* ReplayKit.framework */; };
+		92DF143A2F1F9558009B572B /* sharescreen.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 92DF14222F1F9557009B572B /* sharescreen.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92DF14382F1F9558009B572B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92D751942F14D570008C5BCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92DF14212F1F9557009B572B;
+			remoteInfo = sharescreen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		926F25822F27AC940072327A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				926F25812F27AC940072327A /* WebRTC.xcframework in Embed Frameworks */,
+				926F257F2F27AC940072327A /* GiphyUISDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92DF14432F1F9558009B572B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				92DF143A2F1F9558009B572B /* sharescreen.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		92D7519C2F14D570008C5BCA /* convaySDKTestApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = convaySDKTestApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92D751D12F14E7FB008C5BCA /* GiphyUISDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GiphyUISDK.xcframework; path = "../../Projects/convay-meet-sdk-9646/local-ios-sdk/RequiredFrameworks/GiphyUISDK.xcframework"; sourceTree = "<group>"; };
+		92D751D52F14E819008C5BCA /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WebRTC.xcframework; path = "../../Projects/convay-meet-sdk-9646/local-ios-sdk/RequiredFrameworks/WebRTC.xcframework"; sourceTree = "<group>"; };
+		92DF14222F1F9557009B572B /* sharescreen.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = sharescreen.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		92DF14232F1F9557009B572B /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		92DF142F2F1F9558009B572B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		92D751AE2F14D572008C5BCA /* Exceptions for "convaySDKTestApp2" folder in "convaySDKTestApp2" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 92D7519B2F14D570008C5BCA /* convaySDKTestApp2 */;
+		};
+		92DF14422F1F9558009B572B /* Exceptions for "sharescreen" folder in "sharescreen" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 92DF14212F1F9557009B572B /* sharescreen */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		92D7519E2F14D570008C5BCA /* convaySDKTestApp2 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				92D751AE2F14D572008C5BCA /* Exceptions for "convaySDKTestApp2" folder in "convaySDKTestApp2" target */,
+			);
+			path = convaySDKTestApp2;
+			sourceTree = "<group>";
+		};
+		92DF14252F1F9558009B572B /* sharescreen */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				92DF14422F1F9558009B572B /* Exceptions for "sharescreen" folder in "sharescreen" target */,
+			);
+			path = sharescreen;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92D751992F14D570008C5BCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926F257E2F27AC940072327A /* GiphyUISDK.xcframework in Frameworks */,
+				926F25852F2899700072327A /* ConvayMeetSDK in Frameworks */,
+				926F25802F27AC940072327A /* WebRTC.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92DF141F2F1F9557009B572B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926F25AB2F2A1FD20072327A /* ConvayMeetSDK in Frameworks */,
+				92DF14242F1F9558009B572B /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92D751932F14D570008C5BCA = {
+			isa = PBXGroup;
+			children = (
+				92D7519E2F14D570008C5BCA /* convaySDKTestApp2 */,
+				92DF14252F1F9558009B572B /* sharescreen */,
+				92D751CB2F14E656008C5BCA /* Frameworks */,
+				92D7519D2F14D570008C5BCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92D7519D2F14D570008C5BCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92D7519C2F14D570008C5BCA /* convaySDKTestApp2.app */,
+				92DF14222F1F9557009B572B /* sharescreen.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92D751CB2F14E656008C5BCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92D751D52F14E819008C5BCA /* WebRTC.xcframework */,
+				92D751D12F14E7FB008C5BCA /* GiphyUISDK.xcframework */,
+				92DF14232F1F9557009B572B /* ReplayKit.framework */,
+				92DF142F2F1F9558009B572B /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92D7519B2F14D570008C5BCA /* convaySDKTestApp2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92D751AF2F14D572008C5BCA /* Build configuration list for PBXNativeTarget "convaySDKTestApp2" */;
+			buildPhases = (
+				92D751982F14D570008C5BCA /* Sources */,
+				92D751992F14D570008C5BCA /* Frameworks */,
+				92D7519A2F14D570008C5BCA /* Resources */,
+				92DF14432F1F9558009B572B /* Embed Foundation Extensions */,
+				926F25822F27AC940072327A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92DF14392F1F9558009B572B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				92D7519E2F14D570008C5BCA /* convaySDKTestApp2 */,
+			);
+			name = convaySDKTestApp2;
+			packageProductDependencies = (
+				926F25842F2899700072327A /* ConvayMeetSDK */,
+			);
+			productName = convaySDKTestApp2;
+			productReference = 92D7519C2F14D570008C5BCA /* convaySDKTestApp2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92DF14212F1F9557009B572B /* sharescreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92DF143F2F1F9558009B572B /* Build configuration list for PBXNativeTarget "sharescreen" */;
+			buildPhases = (
+				92DF141E2F1F9557009B572B /* Sources */,
+				92DF141F2F1F9557009B572B /* Frameworks */,
+				92DF14202F1F9557009B572B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				92DF14252F1F9558009B572B /* sharescreen */,
+			);
+			name = sharescreen;
+			packageProductDependencies = (
+				926F25AA2F2A1FD20072327A /* ConvayMeetSDK */,
+			);
+			productName = sharescreen;
+			productReference = 92DF14222F1F9557009B572B /* sharescreen.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92D751942F14D570008C5BCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					92D7519B2F14D570008C5BCA = {
+						CreatedOnToolsVersion = 26.1.1;
+						LastSwiftMigration = 2610;
+					};
+					92DF14212F1F9557009B572B = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 92D751972F14D570008C5BCA /* Build configuration list for PBXProject "convaySDKTestApp2" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92D751932F14D570008C5BCA;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				926F25832F2899620072327A /* XCLocalSwiftPackageReference "../../Projects/convay-meet-sdk-9646/local-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 92D7519D2F14D570008C5BCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92D7519B2F14D570008C5BCA /* convaySDKTestApp2 */,
+				92DF14212F1F9557009B572B /* sharescreen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92D7519A2F14D570008C5BCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92DF14202F1F9557009B572B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92D751982F14D570008C5BCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92DF141E2F1F9557009B572B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92DF14392F1F9558009B572B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92DF14212F1F9557009B572B /* sharescreen */;
+			targetProxy = 92DF14382F1F9558009B572B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		92D751B02F14D572008C5BCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = convaySDKTestApp2/convaySDKTestApp2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = convaySDKTestApp2/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth is used for audio devices during calls.";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "See your scheduled meetings in the app.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is required for video calls.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Local network is used for establishing Peer-to-Peer connections.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs access to location to provide location-based services and device management.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to location to provide location-based services and device management.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone access is required for voice and video calls.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to update your profile with images from your storage or camera and send attachment to your message room from storage";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.synesisit.convay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "convaySDKTestApp2/convaySDKTestApp2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92D751B12F14D572008C5BCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = convaySDKTestApp2/convaySDKTestApp2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = convaySDKTestApp2/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth is used for audio devices during calls.";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "See your scheduled meetings in the app.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is required for video calls.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Local network is used for establishing Peer-to-Peer connections.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs access to location to provide location-based services and device management.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to location to provide location-based services and device management.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone access is required for voice and video calls.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to update your profile with images from your storage or camera and send attachment to your message room from storage";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.synesisit.convay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "convaySDKTestApp2/convaySDKTestApp2-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92D751B22F14D572008C5BCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92D751B32F14D572008C5BCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92DF14402F1F9558009B572B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = sharescreen/sharescreen.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sharescreen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = sharescreen;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synesisit.convay.broadcastextension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92DF14412F1F9558009B572B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = sharescreen/sharescreen.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sharescreen/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = sharescreen;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synesisit.convay.broadcastextension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92D751972F14D570008C5BCA /* Build configuration list for PBXProject "convaySDKTestApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92D751B22F14D572008C5BCA /* Debug */,
+				92D751B32F14D572008C5BCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92D751AF2F14D572008C5BCA /* Build configuration list for PBXNativeTarget "convaySDKTestApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92D751B02F14D572008C5BCA /* Debug */,
+				92D751B12F14D572008C5BCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92DF143F2F1F9558009B572B /* Build configuration list for PBXNativeTarget "sharescreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92DF14402F1F9558009B572B /* Debug */,
+				92DF14412F1F9558009B572B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		926F25832F2899620072327A /* XCLocalSwiftPackageReference "../../Projects/convay-meet-sdk-9646/local-ios-sdk" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../Projects/convay-meet-sdk-9646/local-ios-sdk";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		926F25842F2899700072327A /* ConvayMeetSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 926F25832F2899620072327A /* XCLocalSwiftPackageReference "../../Projects/convay-meet-sdk-9646/local-ios-sdk" */;
+			productName = ConvayMeetSDK;
+		};
+		926F25AA2F2A1FD20072327A /* ConvayMeetSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 926F25832F2899620072327A /* XCLocalSwiftPackageReference "../../Projects/convay-meet-sdk-9646/local-ios-sdk" */;
+			productName = ConvayMeetSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 92D751942F14D570008C5BCA /* Project object */;
+}

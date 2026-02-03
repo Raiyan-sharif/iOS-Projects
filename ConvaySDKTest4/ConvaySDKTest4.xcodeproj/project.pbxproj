@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		926024BA2F2B7EAD00A60971 /* ConvayMeetSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 926024B92F2B7EAD00A60971 /* ConvayMeetSDK */; };
+		926024C22F2B7F2A00A60971 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926024C12F2B7F2A00A60971 /* ReplayKit.framework */; };
+		926024D82F2B7F2A00A60971 /* broadcastextension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 926024BF2F2B7F2900A60971 /* broadcastextension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		926025012F2B8F5500A60971 /* ConvayMeetSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 926025002F2B8F5500A60971 /* ConvayMeetSDK */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		926024D62F2B7F2A00A60971 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 926024982F2B7E5300A60971 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 926024BE2F2B7F2900A60971;
+			remoteInfo = broadcastextension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		926024E12F2B7F2A00A60971 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				926024D82F2B7F2A00A60971 /* broadcastextension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		926024A02F2B7E5300A60971 /* ConvaySDKTest4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvaySDKTest4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		926024BF2F2B7F2900A60971 /* broadcastextension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = broadcastextension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		926024C12F2B7F2A00A60971 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		926024CD2F2B7F2A00A60971 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		926024B22F2B7E5400A60971 /* Exceptions for "ConvaySDKTest4" folder in "ConvaySDKTest4" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9260249F2F2B7E5300A60971 /* ConvaySDKTest4 */;
+		};
+		926024E02F2B7F2A00A60971 /* Exceptions for "broadcastextension" folder in "broadcastextension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 926024BE2F2B7F2900A60971 /* broadcastextension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		926024A22F2B7E5300A60971 /* ConvaySDKTest4 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				926024B22F2B7E5400A60971 /* Exceptions for "ConvaySDKTest4" folder in "ConvaySDKTest4" target */,
+			);
+			path = ConvaySDKTest4;
+			sourceTree = "<group>";
+		};
+		926024C32F2B7F2A00A60971 /* broadcastextension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				926024E02F2B7F2A00A60971 /* Exceptions for "broadcastextension" folder in "broadcastextension" target */,
+			);
+			path = broadcastextension;
+			sourceTree = "<group>";
+		};
+		926024CF2F2B7F2A00A60971 /* broadcastextensionSetupUI */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = broadcastextensionSetupUI;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9260249D2F2B7E5300A60971 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926024BA2F2B7EAD00A60971 /* ConvayMeetSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		926024BC2F2B7F2900A60971 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926025012F2B8F5500A60971 /* ConvayMeetSDK in Frameworks */,
+				926024C22F2B7F2A00A60971 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		926024972F2B7E5300A60971 = {
+			isa = PBXGroup;
+			children = (
+				926024A22F2B7E5300A60971 /* ConvaySDKTest4 */,
+				926024C32F2B7F2A00A60971 /* broadcastextension */,
+				926024CF2F2B7F2A00A60971 /* broadcastextensionSetupUI */,
+				926024C02F2B7F2A00A60971 /* Frameworks */,
+				926024A12F2B7E5300A60971 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		926024A12F2B7E5300A60971 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				926024A02F2B7E5300A60971 /* ConvaySDKTest4.app */,
+				926024BF2F2B7F2900A60971 /* broadcastextension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		926024C02F2B7F2A00A60971 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				926024C12F2B7F2A00A60971 /* ReplayKit.framework */,
+				926024CD2F2B7F2A00A60971 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9260249F2F2B7E5300A60971 /* ConvaySDKTest4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 926024B32F2B7E5400A60971 /* Build configuration list for PBXNativeTarget "ConvaySDKTest4" */;
+			buildPhases = (
+				9260249C2F2B7E5300A60971 /* Sources */,
+				9260249D2F2B7E5300A60971 /* Frameworks */,
+				9260249E2F2B7E5300A60971 /* Resources */,
+				926024E12F2B7F2A00A60971 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				926024D72F2B7F2A00A60971 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				926024A22F2B7E5300A60971 /* ConvaySDKTest4 */,
+			);
+			name = ConvaySDKTest4;
+			packageProductDependencies = (
+				926024B92F2B7EAD00A60971 /* ConvayMeetSDK */,
+			);
+			productName = ConvaySDKTest4;
+			productReference = 926024A02F2B7E5300A60971 /* ConvaySDKTest4.app */;
+			productType = "com.apple.product-type.application";
+		};
+		926024BE2F2B7F2900A60971 /* broadcastextension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 926024DD2F2B7F2A00A60971 /* Build configuration list for PBXNativeTarget "broadcastextension" */;
+			buildPhases = (
+				926024BB2F2B7F2900A60971 /* Sources */,
+				926024BC2F2B7F2900A60971 /* Frameworks */,
+				926024BD2F2B7F2900A60971 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				926024C32F2B7F2A00A60971 /* broadcastextension */,
+			);
+			name = broadcastextension;
+			packageProductDependencies = (
+				926025002F2B8F5500A60971 /* ConvayMeetSDK */,
+			);
+			productName = broadcastextension;
+			productReference = 926024BF2F2B7F2900A60971 /* broadcastextension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		926024982F2B7E5300A60971 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					9260249F2F2B7E5300A60971 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					926024BE2F2B7F2900A60971 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 9260249B2F2B7E5300A60971 /* Build configuration list for PBXProject "ConvaySDKTest4" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 926024972F2B7E5300A60971;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				926024B82F2B7EAD00A60971 /* XCRemoteSwiftPackageReference "convay-meet-ios-sdk-releases" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 926024A12F2B7E5300A60971 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9260249F2F2B7E5300A60971 /* ConvaySDKTest4 */,
+				926024BE2F2B7F2900A60971 /* broadcastextension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9260249E2F2B7E5300A60971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		926024BD2F2B7F2900A60971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9260249C2F2B7E5300A60971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		926024BB2F2B7F2900A60971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		926024D72F2B7F2A00A60971 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 926024BE2F2B7F2900A60971 /* broadcastextension */;
+			targetProxy = 926024D62F2B7F2A00A60971 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		926024B42F2B7E5400A60971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ConvaySDKTest4/ConvaySDKTest4.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ConvaySDKTest4/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = NO;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "See your scheduled meetings in the app.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Participate in meetings with video.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Local network is used for establishing Peer-to-Peer connections.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs access to location to provide location-based services and device management.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to location to provide location-based services and device management.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Participate in meetings with voice and share audio during screen recording.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to update your profile with images from your storage or camera and send attachment to your message room from storage";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synesisit.convay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		926024B52F2B7E5400A60971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ConvaySDKTest4/ConvaySDKTest4.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ConvaySDKTest4/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = NO;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "See your scheduled meetings in the app.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Participate in meetings with video.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Local network is used for establishing Peer-to-Peer connections.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs access to location to provide location-based services and device management.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to location to provide location-based services and device management.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Participate in meetings with voice and share audio during screen recording.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to update your profile with images from your storage or camera and send attachment to your message room from storage";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synesisit.convay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		926024B62F2B7E5400A60971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		926024B72F2B7E5400A60971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		926024DE2F2B7F2A00A60971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = broadcastextension/broadcastextension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = broadcastextension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = broadcastextension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synesisit.convay.broadcastextension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		926024DF2F2B7F2A00A60971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = broadcastextension/broadcastextension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQN3WP3JSR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = broadcastextension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = broadcastextension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synesisit.convay.broadcastextension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9260249B2F2B7E5300A60971 /* Build configuration list for PBXProject "ConvaySDKTest4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				926024B62F2B7E5400A60971 /* Debug */,
+				926024B72F2B7E5400A60971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		926024B32F2B7E5400A60971 /* Build configuration list for PBXNativeTarget "ConvaySDKTest4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				926024B42F2B7E5400A60971 /* Debug */,
+				926024B52F2B7E5400A60971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		926024DD2F2B7F2A00A60971 /* Build configuration list for PBXNativeTarget "broadcastextension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				926024DE2F2B7F2A00A60971 /* Debug */,
+				926024DF2F2B7F2A00A60971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		926024B82F2B7EAD00A60971 /* XCRemoteSwiftPackageReference "convay-meet-ios-sdk-releases" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Synesis-IT-PLC/convay-meet-ios-sdk-releases/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		926024B92F2B7EAD00A60971 /* ConvayMeetSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 926024B82F2B7EAD00A60971 /* XCRemoteSwiftPackageReference "convay-meet-ios-sdk-releases" */;
+			productName = ConvayMeetSDK;
+		};
+		926025002F2B8F5500A60971 /* ConvayMeetSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 926024B82F2B7EAD00A60971 /* XCRemoteSwiftPackageReference "convay-meet-ios-sdk-releases" */;
+			productName = ConvayMeetSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 926024982F2B7E5300A60971 /* Project object */;
+}

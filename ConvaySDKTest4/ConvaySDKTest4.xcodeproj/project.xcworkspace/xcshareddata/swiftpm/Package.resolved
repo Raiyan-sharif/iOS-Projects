@@ -1,0 +1,42 @@
+{
+  "originHash" : "ce7279c625338882a4d5ece1cca78288f5b4bae971a5677cb6b3817448dd7c9e",
+  "pins" : [
+    {
+      "identity" : "convay-meet-ios-sdk-releases",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Synesis-IT-PLC/convay-meet-ios-sdk-releases/",
+      "state" : {
+        "revision" : "c96bcf1f9e2a71f4269394bfd276634301e657a3",
+        "version" : "1.0.3"
+      }
+    },
+    {
+      "identity" : "giphy-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Giphy/giphy-ios-sdk",
+      "state" : {
+        "revision" : "cdefbedc9f99d40cc64667a2bfaae67a1cf36fbb",
+        "version" : "2.2.12"
+      }
+    },
+    {
+      "identity" : "libwebp-xcode",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/libwebp-Xcode",
+      "state" : {
+        "revision" : "0d60654eeefd5d7d2bef3835804892c40225e8b2",
+        "version" : "1.5.0"
+      }
+    },
+    {
+      "identity" : "webrtc",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jitsi/webrtc",
+      "state" : {
+        "revision" : "3a659cecd97387a0cf079be34f82f3bb24a03e13",
+        "version" : "124.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}
