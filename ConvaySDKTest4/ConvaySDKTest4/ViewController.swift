@@ -131,6 +131,8 @@ class ViewController: UIViewController {
         let options = ConvayMeetConferenceOptions.fromBuilder { builder in
             builder.setFeatureFlag("joinpage.enabled", withValue: true)
             builder.setFeatureFlag("ios.screensharing.enabled", withBoolean: true)
+            builder.setFeatureFlag("filmstrip.enabled", withBoolean: false)
+            builder.setFeatureFlag("screenshare.landscape.enabled", withBoolean: true)
 //            builder.setFeatureFlag("prejoinpage.enabled", withBoolean: true)
 //            builder.setFeatureFlag("prejoinConfig.enabled", withBoolean: true)
 //            builder.setFeatureFlag("startWithVideoMuted", withBoolean: false)
@@ -139,7 +141,7 @@ class ViewController: UIViewController {
 //            builder.setFeatureFlag("prejoinpage.hideDisplayName", withBoolean: false)
 //            builder.setVideoMuted(false)
 //            builder.setAudioMuted(false)
-            builder.meetingLink = "https://convay.com/m/j/912399454038/raiyan?pwd=91d4279ac53ddfd9b7e62b744247e0ad"
+            builder.meetingLink = "https://convay.com/m/j/506736169630/jack?pwd=f3b17654fce7219bd4df6d9958e66d7e"
             builder.authToken = "eyJhbGciOiJIUzUxMiJ9.eyJhY2Nlc3NfdG9rZW4iOiJzeXRfY21GcGVXRnVMbk5vWVhKcFptRjBjM2x1WlhOcGMybDBMbWx1Wm04X2ZRcGpQeklKZUpwY0pmQU1GcnVpXzNKZk1oeiIsImlzX29ubHlfc3NvIjpmYWxzZSwic3ViIjoiN2MwZTU1YTktYzRlNi00OTZiLWE1YmEtMjNiOWY2ODFiNmIxIiwiZGF0YSI6eyJmZWF0dXJlcyI6WyJSZWNvcmRpbmciLCJEZXNrdG9wQXBwMSIsIlRyYW5zY3JpcHRpb24iLCJDaGF0IiwiTGl2ZXN0cmVhbWluZyJdLCJ1c2VyX2VtYWlsIjoicmFpeWFuLnNoYXJpZkBzeW5lc2lzaXQuaW5mbyIsImxpY2Vuc2VfbmFtZSI6Ikhvc3QiLCJyb2xlIjoiT3duZXIiLCJvcmdhbml6YXRpb25faWQiOiJjMmRkOTkxNi1jZTY4LTExZWQtOWE0Yy0wMjQyYWMxMzAwMDgiLCJvcmdhbml6YXRpb25fbmFtZSI6IlN5bmVzaXMgSVQgUExDIiwiSUQiOiI3YzBlNTVhOS1jNGU2LTQ5NmItYTViYS0yM2I5ZjY4MWI2YjEiLCJ2YW5pdHlfdXJsIjpudWxsLCJkaXNwbGF5X25hbWUiOiJSYWl5YW4gU2hhcmlmIiwib3JnYW5pemF0aW9uX2xvZ28iOm51bGwsImlzX2NtX3VzZXIiOnRydWV9LCJkZXZpY2VfaWQiOiJVQVZOTEpTRkJPIiwidXNlcl9pZCI6IkByYWl5YW4uc2hhcmlmYXRzeW5lc2lzaXQuaW5mbzptYXRyaXguY29udmF5LmNvbSIsIndlbGxfa25vd24iOm51bGwsInBlcm1pc3Npb24iOnsidmlld19ncm91cCI6dHJ1ZSwiYWRkX3JvbGUiOnRydWUsInZpZXdfb3JnYW5pemF0aW9uIjp0cnVlLCJlZGl0X3VzZXIiOnRydWUsImVkaXRfb3JnYW5pemF0aW9uIjp0cnVlLCJlZGl0X2dyb3VwIjp0cnVlLCJkZWxldGVfcm9sZSI6dHJ1ZSwidmlld19yb2xlIjp0cnVlLCJlZGl0X3JvbGUiOnRydWUsInZpZXdfbWVldGluZyI6dHJ1ZSwiYWRkX2dyb3VwIjp0cnVlLCJ2aWV3X2Rhc2hib2FyZCI6dHJ1ZSwidmlld191c2VyIjp0cnVlLCJkZWxldGVfdXNlciI6dHJ1ZSwiYWRkX3VzZXIiOnRydWUsImRlbGV0ZV9ncm91cCI6dHJ1ZX0sImV4cCI6MTc2OTAwNzE1MiwiaWF0IjoxNzY5MDA2MjUyLCJob21lX3NlcnZlciI6Im1hdHJpeC5jb252YXkuY29tIn0.nftslDZv3EEtRDND1zbKmUeuzOxpUqtttkcNoRNYpVFFM8CFrSa1Lj_YKTP4U2BWSrgUgbUZXc4ExZa7OHq6dw"
         }
         convayMeetView.join(options)

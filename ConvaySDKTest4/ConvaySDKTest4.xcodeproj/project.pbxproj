@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		926024BA2F2B7EAD00A60971 /* ConvayMeetSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 926024B92F2B7EAD00A60971 /* ConvayMeetSDK */; };
 		926024C22F2B7F2A00A60971 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926024C12F2B7F2A00A60971 /* ReplayKit.framework */; };
 		926024D82F2B7F2A00A60971 /* broadcastextension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 926024BF2F2B7F2900A60971 /* broadcastextension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		926025012F2B8F5500A60971 /* ConvayMeetSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 926025002F2B8F5500A60971 /* ConvayMeetSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +88,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				926024BA2F2B7EAD00A60971 /* ConvayMeetSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				926025012F2B8F5500A60971 /* ConvayMeetSDK in Frameworks */,
 				926024C22F2B7F2A00A60971 /* ReplayKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,7 +153,6 @@
 			);
 			name = ConvaySDKTest4;
 			packageProductDependencies = (
-				926024B92F2B7EAD00A60971 /* ConvayMeetSDK */,
 			);
 			productName = ConvaySDKTest4;
 			productReference = 926024A02F2B7E5300A60971 /* ConvaySDKTest4.app */;
@@ -180,7 +175,6 @@
 			);
 			name = broadcastextension;
 			packageProductDependencies = (
-				926025002F2B8F5500A60971 /* ConvayMeetSDK */,
 			);
 			productName = broadcastextension;
 			productReference = 926024BF2F2B7F2900A60971 /* broadcastextension.appex */;
@@ -214,7 +208,6 @@
 			mainGroup = 926024972F2B7E5300A60971;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				926024B82F2B7EAD00A60971 /* XCRemoteSwiftPackageReference "convay-meet-ios-sdk-releases" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 926024A12F2B7E5300A60971 /* Products */;
@@ -546,30 +539,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		926024B82F2B7EAD00A60971 /* XCRemoteSwiftPackageReference "convay-meet-ios-sdk-releases" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Synesis-IT-PLC/convay-meet-ios-sdk-releases/";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.3;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		926024B92F2B7EAD00A60971 /* ConvayMeetSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 926024B82F2B7EAD00A60971 /* XCRemoteSwiftPackageReference "convay-meet-ios-sdk-releases" */;
-			productName = ConvayMeetSDK;
-		};
-		926025002F2B8F5500A60971 /* ConvayMeetSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 926024B82F2B7EAD00A60971 /* XCRemoteSwiftPackageReference "convay-meet-ios-sdk-releases" */;
-			productName = ConvayMeetSDK;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 926024982F2B7E5300A60971 /* Project object */;
 }
