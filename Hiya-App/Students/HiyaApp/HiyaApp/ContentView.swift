@@ -27,7 +27,6 @@ struct ContentView: View {
                             .foregroundStyle(.tertiary)
                             .multilineTextAlignment(.center)
                             .font(.title)
-                        
                     }
                     
                 } else {
